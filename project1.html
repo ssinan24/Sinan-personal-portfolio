@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Admin Panel | Project Details</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-hero {
+            padding-top: 8rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .project-banner {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+        .project-content {
+            text-align: left;
+            margin-bottom: 4rem;
+        }
+        .project-content h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+        .back-link:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Sinan<span>.</span></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Back to Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-detail-hero">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1 class="name" style="font-size: 3rem;">E-Commerce Admin Panel</h1>
+            <p class="description">A comprehensive full-stack analytics and management dashboard designed for modern e-commerce businesses.</p>
+            
+            <img src="assets/project1.jpg" alt="E-Commerce Admin Panel" class="project-banner">
+            
+            <div class="project-content glass" style="padding: 3rem;">
+                <h3>Overview</h3>
+                <p>This is a dummy project created to demonstrate the structure of a project portfolio page. In a real-world scenario, this section would detail the problem being solved, the target audience, and the overall goals of the E-commerce platform.</p>
+                
+                <h3>Technologies Used</h3>
+                <ul style="list-style: square inside; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                    <li><strong>Frontend:</strong> React.js, Context API, Vanilla CSS</li>
+                    <li><strong>Backend:</strong> Node.js, Express.js</li>
+                    <li><strong>Database:</strong> MongoDB</li>
+                    <li><strong>Authentication:</strong> JWT (JSON Web Tokens)</li>
+                </ul>
+
+                <h3>Key Features</h3>
+                <p>Features include real-time sales analytics, inventory management, order processing pipelines, and user role administration.</p>
+                
+                <div style="margin-top: 3rem;">
+                    <a href="index.html" class="btn primary-btn">Return to Portfolio</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mohammed Sinan. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

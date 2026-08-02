@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammed Sinan - MERN & .NET Developer, Public Speaker, BSc CS Student">
+    <title>Mohammed Sinan | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">Sinan<span>.</span></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Hello, World! I am</p>
+                <h1 class="name">Mohammed Sinan</h1>
+                <h2 class="title">Tech Enthusiast, Developer & Speaker.</h2>
+                <p class="description">
+                    I'm a passionate self-taught developer and BSc CS student with expertise in the 
+                    <span class="highlight">MERN stack</span> and <span class="highlight">.NET</span> ecosystem. 
+                    I love building scalable solutions, exploring new technologies, and sharing my journey through public speaking.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-glow"></div>
+                <img src="assets/profile.jpg" alt="Mohammed Sinan" class="hero-image">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-header">
+                <h2>Skills & Expertise</h2>
+                <p>Technologies and domains I specialize in</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">🚀</div>
+                    <h3>MERN Stack</h3>
+                    <p>MongoDB, Express.js, React, Node.js for building scalable full-stack web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔷</div>
+                    <h3>.NET Ecosystem</h3>
+                    <p>C#, ASP.NET Core, and Entity Framework for robust enterprise-level backend solutions.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Computer Science</h3>
+                    <p>Solid foundation in Data Structures, Algorithms, and Software Engineering principles.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🎤</div>
+                    <h3>Public Speaking</h3>
+                    <p>Passionate about sharing knowledge, delivering tech talks, and community building.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project1.jpg" alt="E-commerce Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>MERN</span>
+                            <span>Dashboard</span>
+                        </div>
+                        <h3>E-Commerce Admin Panel</h3>
+                        <p>A full-stack analytics and management dashboard for modern e-commerce businesses.</p>
+                        <a href="project1.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/project2.jpg" alt="Social Network App">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>.NET</span>
+                            <span>React</span>
+                        </div>
+                        <h3>Social Connect Platform</h3>
+                        <p>A scalable social networking platform with real-time updates and sleek glassmorphism UI.</p>
+                        <a href="project2.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="section-header">
+                <h2>What I Do</h2>
+                <p>How I can help you achieve your goals</p>
+            </div>
+            <div class="services-wrapper">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <div class="service-content">
+                        <h3>Full-Stack Web Development</h3>
+                        <p>End-to-end development of responsive, fast, and accessible web applications tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <div class="service-content">
+                        <h3>API Design & Architecture</h3>
+                        <p>Building secure, scalable, and well-documented RESTful APIs using Node.js or ASP.NET Core.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <div class="service-content">
+                        <h3>Tech Talks & Workshops</h3>
+                        <p>Engaging presentations and hands-on workshops on modern web technologies and software engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <div class="contact-text">
+                    <h2>Let's build something amazing together.</h2>
+                    <p>Whether you have a project in mind or just want to say hi, I'd love to hear from you.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <div data-fs-success style="display:none; color: var(--accent-color); text-align: center; margin-bottom: 1.5rem; font-weight: 600;">Message sent successfully! I'll get back to you soon.</div>
+                    <div data-fs-error style="display:none; color: #ff4757; text-align: center; margin-bottom: 1.5rem; font-weight: 600;">Error sending message. Please try again.</div>
+
+                    <form id="contact-form" class="contact-form">
+                        <input type="hidden" name="_subject" value="New Message from Mohammed Sinan Portfolio!">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe" data-fs-field>
+                            <span data-fs-error="name" style="color: #ff4757; font-size: 0.85rem; display: block; margin-top: 0.3rem;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com" data-fs-field>
+                            <span data-fs-error="email" style="color: #ff4757; font-size: 0.85rem; display: block; margin-top: 0.3rem;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..." data-fs-field></textarea>
+                            <span data-fs-error="message" style="color: #ff4757; font-size: 0.85rem; display: block; margin-top: 0.3rem;"></span>
+                        </div>
+                        <button type="submit" class="submit-btn" data-fs-submit-btn>Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mohammed Sinan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { formElement: '#contact-form', formId: 'mlgqyzpg' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+</body>
+</html>
