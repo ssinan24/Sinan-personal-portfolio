@@ -84,3 +84,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// Read More Toggle Logic
+const readMoreBtn = document.getElementById('read-more-btn');
+const aboutMoreText = document.getElementById('about-more-text');
+
+if (readMoreBtn && aboutMoreText) {
+    readMoreBtn.addEventListener('click', () => {
+        aboutMoreText.classList.toggle('expanded');
+        readMoreBtn.classList.toggle('active');
+        
+        const btnText = readMoreBtn.childNodes[0];
+        if (aboutMoreText.classList.contains('expanded')) {
+            btnText.nodeValue = 'Read Less ';
+        } else {
+            btnText.nodeValue = 'Read More ';
+        }
+    });
+}
