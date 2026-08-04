@@ -134,6 +134,7 @@ ul {
     font-size: 1rem;
     cursor: pointer;
     transition: var(--transition);
+    white-space: nowrap;
 }
 
 .primary-btn {
@@ -244,7 +245,9 @@ section {
 
 .cta-buttons {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
 }
 
 .hero-image-wrapper {
