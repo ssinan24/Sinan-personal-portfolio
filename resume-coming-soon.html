@@ -88,6 +88,13 @@
     </style>
 </head>
 <body>
+    <script>
+        // Apply theme from localStorage immediately to prevent flashing
+        const theme = localStorage.getItem('theme');
+        if (theme === 'light' || (!theme && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.body.classList.add('light-mode');
+        }
+    </script>
     <div class="error-container">
         <div class="error-card">
             <div class="error-icon">
