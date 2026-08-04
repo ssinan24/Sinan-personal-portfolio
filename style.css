@@ -13,8 +13,8 @@
 
 body.light-mode {
     --bg-color: #f8f9fc;
-    --text-primary: #0b0d17;
-    --text-secondary: #4a5568;
+    --text-primary: #334155;
+    --text-secondary: #64748b;
     --accent-color: #0077b6;
     --accent-hover: #023e8a;
     --accent-purple: #6d28d9;
