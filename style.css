@@ -8,6 +8,8 @@
     --accent-purple: #7b2cbf;
     --card-bg: rgba(255, 255, 255, 0.03);
     --border-color: rgba(255, 255, 255, 0.1);
+    --nav-bg: rgba(11, 13, 23, 0.8);
+    --nav-mobile-bg: rgba(11, 13, 23, 0.95);
     --transition: all 0.3s ease;
 }
 
@@ -20,6 +22,8 @@ body.light-mode {
     --accent-purple: #6d28d9;
     --card-bg: rgba(255, 255, 255, 0.85);
     --border-color: rgba(0, 0, 0, 0.1);
+    --nav-bg: rgba(255, 255, 255, 0.85);
+    --nav-mobile-bg: rgba(255, 255, 255, 0.98);
 }
 
 * {
@@ -74,7 +78,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(11, 13, 23, 0.8);
+    background: var(--nav-bg);
     backdrop-filter: blur(15px);
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
@@ -770,7 +774,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: rgba(11, 13, 23, 0.95);
+        background: var(--nav-mobile-bg);
         flex-direction: column;
         padding: 2rem;
         text-align: center;
