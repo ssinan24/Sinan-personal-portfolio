@@ -249,8 +249,10 @@ section {
 
 .hero-image-wrapper {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto;
 }
 
 .image-glow {
@@ -272,7 +274,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: top center;
     border-radius: 30px;
     position: relative;
     z-index: 1;
@@ -600,8 +602,7 @@ footer {
     }
     
     .hero-image-wrapper {
-        width: 300px;
-        height: 300px;
+        max-width: 320px;
     }
     
     .name {
