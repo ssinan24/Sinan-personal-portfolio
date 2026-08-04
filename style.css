@@ -545,6 +545,107 @@ section {
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
 }
 
+/* About Section */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text {
+    padding: 2.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.about-text strong {
+    color: var(--text-primary);
+}
+
+/* Timeline / Experience Section */
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: var(--border-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    padding: 2rem;
+    border-radius: 16px;
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    border-color: var(--accent-color);
+    transform: translateX(10px);
+}
+
+.timeline-date {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    background: rgba(0, 240, 255, 0.1);
+    color: var(--accent-color);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.timeline-subtitle {
+    color: var(--accent-purple);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+/* Nav Resume Button */
+.nav-resume-btn {
+    padding: 0.5rem 1.2rem !important;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    color: var(--accent-color) !important;
+}
+
+.nav-resume-btn:hover {
+    background: rgba(0, 240, 255, 0.1);
+}
+
+.nav-resume-btn::after {
+    display: none !important; /* Hide the underline animation on the button */
+}
+
 /* Footer */
 footer {
     text-align: center;
