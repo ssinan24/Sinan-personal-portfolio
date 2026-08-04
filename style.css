@@ -11,6 +11,17 @@
     --transition: all 0.3s ease;
 }
 
+body.light-mode {
+    --bg-color: #f8f9fc;
+    --text-primary: #0b0d17;
+    --text-secondary: #4a5568;
+    --accent-color: #0077b6;
+    --accent-hover: #023e8a;
+    --accent-purple: #6d28d9;
+    --card-bg: rgba(255, 255, 255, 0.85);
+    --border-color: rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -181,6 +192,23 @@ section {
 .section-header p {
     color: var(--text-secondary);
     font-size: 1.1rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    padding: 0.5rem;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 /* Hero Section */
