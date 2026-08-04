@@ -607,6 +607,16 @@ section {
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* Ensure full text shows on desktop, hide Read More button */
+@media (min-width: 769px) {
+    .hidden-text {
+        display: block !important;
+    }
+    .read-more-btn {
+        display: none !important;
+    }
+}
+
 /* Timeline / Experience Section */
 .timeline {
     max-width: 800px;
